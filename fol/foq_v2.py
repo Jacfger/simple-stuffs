@@ -4,7 +4,8 @@ import json
 import random
 from itertools import product
 from abc import ABC, abstractmethod
-from typing import List, Tuple, TypedDict
+from typing import List, Tuple
+from typing_extensions import TypedDict
 from typing import Union as TUnion
 from numpy.core.arrayprint import SubArrayFormat
 from collections import Counter, defaultdict

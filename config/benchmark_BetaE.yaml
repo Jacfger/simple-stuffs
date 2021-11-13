@@ -3,7 +3,8 @@ seed: 0
 cuda: 0
 data:
   type: benchmark  # one of ['beta', 'benchmark']
-  data_folder: data/benchmark/FB15k-237
+  data_folder: data/5222_white_test
+  # data_folder: data/5222_train
   cpu: 10
 train:
   negative_sample_size: 128  # for each positive sample
@@ -19,7 +20,8 @@ train:
 evaluate:  # only used when valid/test in action
   batch_size: 1000
   print: true
-  formula_id_file: 'data/test_generated_formula_anchor_node=3.csv'
+  formula_id_file: 'COMP5222-test-query-white-types.csv'
+  # formula_id_file: 'COMP5222-train-query-types.csv'
 estimator:
   embedding: beta # one of [Transe, box, beta, dm]
   beta:
