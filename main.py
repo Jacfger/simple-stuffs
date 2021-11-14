@@ -338,8 +338,6 @@ if __name__ == "__main__":
             lr, train_config['warm_up_steps'], init_step = load_beta_model(args.checkpoint_path, model, opt)
 
     training_logs = []
-    if configure['data']['type'] == 'benchmark':
-        assert train_config['steps'] == init_step
     with trange(init_step, train_config['steps'] + 1) as t:
         for step in t:
             # basic training step

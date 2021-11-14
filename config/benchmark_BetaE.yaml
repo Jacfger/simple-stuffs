@@ -5,7 +5,7 @@ data:
   type: benchmark  # one of ['beta', 'benchmark']
   data_folder: data/5222_white_test
   # data_folder: data/5222_train
-  cpu: 10
+  cpu: 53
 train:
   negative_sample_size: 128  # for each positive sample
   batch_size: 512
